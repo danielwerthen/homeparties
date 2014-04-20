@@ -14,7 +14,8 @@
     "lodash": "~2.4.1",
     "ejs": "~0.8.4",
     "mailgun-js": "^0.4.7",
-    "moment": "^2.6.0"
+    "moment": "^2.6.0",
+    "bcrypt": "^0.7.7"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
