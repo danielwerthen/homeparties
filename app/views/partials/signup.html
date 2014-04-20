@@ -1,0 +1,22 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="signup">
+	<form name="signup" ng-controller="SignupCtrl" ng-submit="submitForm()">
+		<fieldset class="control" for="name">
+			<label>Namn: </label>
+			<input type="text" ng-model="form.name">
+		</fieldset>
+		<fieldset class="control" for="name">
+			<label>Epost: </label>
+			<input type="email" ng-model="form.email">
+		</fieldset>
+		<fieldset class="control" for="password">
+			<label>Lösenord: </label>
+			<input type="password" ng-model="form.password">
+		</fieldset>
+		<fieldset class="control" for="submit" ng-hide="message">
+			<input type="submit"  value="Registrera">
+		</fieldset>
+		<div ng-show="message">{{ message }}</div>
+	</form>
+</div>

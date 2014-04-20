@@ -12,6 +12,10 @@ angular.module('homepartiesApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+  	  .when('/signup', {
+				templateUrl: 'partials/signup',
+				controller: 'SignupCtrl'
+			})
       .otherwise({
         redirectTo: '/'
       });
